@@ -1,0 +1,27 @@
+{
+    "name": "csharp-snippet-guide",
+    "displayName": "c# guide snippet",
+    "description": "CSharp for learning",
+    "version": "1.0.0",
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "publisher": "ITGeniusEngineering",
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "csharp",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iamsamitdev/csharp-snippet-guide.git"
+    }
+}

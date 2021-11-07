@@ -1,0 +1,768 @@
+{
+	"Console Write": {
+		"prefix": "cs.console.write",
+		"body": [
+		  "// การแแสงผลใน Console",
+		  "Console.WriteLine(\"Hello World!\");",
+		  "Console.WriteLine(\"สวัสดีซีชาร์ปโปรแกรมมิ่ง\");",
+		  "Console.WriteLine(2+3);",
+		  "Console.WriteLine(2*3);",
+		  "",
+		  "Console.Write(\"สวัสดี\");",
+		  "Console.Write(\"วันเสาร์\\n\");",
+		  "",
+		  "Console.WriteLine(\"\\tยินดีต้อนรับ\"+ \"ทุกท่านเข้าสู่การเรียนดอนเน็ต\");",
+		  "",
+		  "Console.WriteLine(\"Hello Message\\a\");"
+		],
+		"description": "Console Write"
+	},
+
+
+	//================= Escape Characters ==========
+
+	"Console Write Escapse": {
+		"prefix": "cs.console.escapse",
+		"body": [
+		  "Console.WriteLine(\"This line \\tcontains two \\ttabs\");",
+		  "Console.WriteLine(\"This statement\\ncontains a new line\");",
+		  "Console.WriteLine(\"This statement sound alert\\a\");"
+		],
+		"description": "Console Write Escapse"
+	},
+
+	//================= Console ReadLine ==========
+
+	"Console Read Line": {
+		"prefix": "cs.console.readline",
+		"body": [
+		  "Console.Write(\"Enter your name, please: \");",
+		  "string sName = Console.ReadLine();",
+		  "Console.WriteLine(\"Hello,\" + sName);"
+		],
+		"description": "Console Read Line"
+	},
+
+	//================= Datatype ==================
+
+	"Integer Range": {
+		"prefix": "cs.datatype.integerrange",
+		"body": [
+			"Console.WriteLine(\"min sbyte = \" + SByte.MinValue);",
+			"Console.WriteLine(\"max sbyte = \" + SByte.MaxValue);",
+			"Console.WriteLine(\"min byte = \" + Byte.MinValue);",
+			"Console.WriteLine(\"max byte = \" + Byte.MaxValue);",
+			"Console.WriteLine(\"min short = \" + Int16.MinValue);",
+			"Console.WriteLine(\"max short = \" + Int16.MaxValue);",
+			"Console.WriteLine(\"min ushort = \" + UInt16.MinValue);",
+			"Console.WriteLine(\"max ushort = \" + UInt16.MaxValue);",
+			"Console.WriteLine(\"min int = \" + Int32.MinValue);",
+			"Console.WriteLine(\"max int = \" + Int32.MaxValue);",
+			"Console.WriteLine(\"min uint = \" + UInt32.MinValue);",
+			"Console.WriteLine(\"max uint = \" + UInt32.MaxValue);",
+			"Console.WriteLine(\"min long = \" + Int64.MinValue);",
+			"Console.WriteLine(\"max long = \" + Int64.MaxValue);",
+			"Console.WriteLine(\"min ulong = \" + UInt64.MinValue);",
+			"Console.WriteLine(\"max ulong = \" + UInt64.MaxValue);"
+		],
+		"description": "Integer Range"
+	},
+
+	//================= Variable ===============
+
+	"Variable display": {
+		"prefix": "cs.var.writeconsole",
+		"body": [
+			"int year = 1990;",
+			"string name = \"Thomas\";",
+			"string nationality = \"American\";",
+			"",
+			"Console.WriteLine (\"His name is {0}\", name);",
+			"Console.WriteLine (\"He was born in {0}\", year);",
+			"Console.WriteLine (\"He is {0}\", nationality);"
+		],
+		"description": "Variable display"
+	},
+
+	"Boolean Variable": {
+		"prefix": "cs.var.boolean",
+		"body": [
+			"bool isDay = true;",
+			"",
+			"if (isDay)",
+			"{",
+			"\tConsole.WriteLine(\"Good morning.\");",
+			"}",
+			"else",
+			"{",
+			"\tConsole.WriteLine(\"Good night.\");",
+			"}",
+			"",
+			"bool gameOver = false;",
+			"Console.WriteLine(\"Game over = {0}\", gameOver);"
+		],
+		"description": "Boolean Variable"
+	},
+
+	"NumberExample": {
+		"prefix": "cs.var.number",
+		"body": [
+		  "int apple = 10;",
+		  "int mango = 5;",
+		  "int totalFruit = apple + mango;",
+		  "",
+		  "Console.WriteLine(\"We have {0} fruits in the basket\", totalFruit);",
+		  "",
+		  "byte month = 12;",
+		  "byte day = 10;",
+		  "short year = 2016;",
+		  "",
+		  "Console.WriteLine(\"Date {0}/{1}/{2}\", month, day, year);",
+		  "",
+		  "decimal bigNumber = 9460730472580800;",
+		  "Console.WriteLine(bigNumber.ToString(\"0.00000E0\"));",
+		  "",
+		  "int max = Int32.MaxValue;",
+		  "Console.WriteLine(max);",
+		  "max = max + 1;",
+		  "Console.WriteLine(max);"
+		],
+		"description": "NumberExample"
+	},
+
+
+	"Type overflow": {
+		"prefix": "cs.var.overflow",
+		"body": [
+		  "int max = Int32.MaxValue;",
+		  "Console.WriteLine(max);",
+		  "max = max + 1;",
+		  "Console.WriteLine(max);",
+		  "",
+		  "",
+		  "int min = Int32.MinValue;",
+		  "Console.WriteLine(min);",
+		  "min = min - 1;",
+		  "Console.WriteLine(min);"
+		],
+		"description": "Type overflow"
+	},
+
+	"Float Decimal Example": {
+		"prefix": "cs.var.floatdecimal",
+		"body": [
+		  "float speed = 8.3f;",
+		  "float time = 10.258987894445f;",
+		  "float distance = speed * time;",
+		  "",
+		  "Console.WriteLine(\"Mateo runs at speed {0} m/s in {1} seconds\", speed, time);",
+		  "Console.WriteLine(\"Total run distance {0} meters\", distance);",
+		  "",
+		  "Console.WriteLine(\"------------------\");",
+		  "",
+		  "float lightSpeed = 5.8786E12f; // 5.8786 x 10^12 ",
+		  "Console.WriteLine(\"Light can travel {0} miles in 1 year\", lightSpeed);",
+		  "",
+		  "Console.WriteLine(\"------------------\");",
+		  "",
+		  "double day = 365.2578954658789567;",
+		  "double neutronMass = 1.674927471E-27;",
+		  "double pi = 22 / 7.0f;",
+		  "Console.WriteLine(\"Earth take about {0} day to orbit the sun\", day);",
+		  "Console.WriteLine(\"PI value = {0}\", pi);",
+		  "Console.WriteLine(\"Neutron Mass = {0} kg\", neutronMass);",
+		  "",
+		  "Console.WriteLine(\"------------------\");",
+		  "",
+		  "// Difference between decimal, float and double",
+		  "// Float - 7 digits (32 bit)",
+		  "// Double-15-16 digits (64 bit)",
+		  "// Decimal -28-29 significant digits (128 bit)",
+		  "",
+		  "float flt = 1F/3;",
+		  "double dbl = 1D/3;",
+		  "decimal dcm = 1M/3;",
+		  "Console.WriteLine(\"float: {0} \\ndouble: {1} \\ndecimal: {2}\", flt, dbl, dcm);"
+		],
+		"description": "Float Decimal Example"
+	},
+
+
+	//================= Constants ===============
+
+	"Basic Constant": {
+		"prefix": "cs.const.basic",
+		"body": [
+		  "const float PI = 3.14f;",
+		  "// PI = 1.0f; // Invalid",
+		  "float r = 4;",
+		  "",
+		  "float area = PI * r * r;",
+		  "float circumference = 2 * PI * r;",
+		  "float volume = (4 / 3.0f) * PI * r * r * r;",
+		  "float surface = 4 * PI * r * r;",
+		  "",
+		  "Console.WriteLine(\"Circle radius = {0}\", r);",
+		  "Console.WriteLine(\"Circle area = {0}\", area);",
+		  "Console.WriteLine(\"Circle circumference = {0}\", circumference);",
+		  "Console.WriteLine(\"Circle volume = {0}\", volume);",
+		  "Console.WriteLine(\"Circle surface = {0}\", surface);"
+		],
+		"description": "Basic Constant"
+	},
+
+	"Array Constants": {
+		"prefix": "cs.const.array",
+		"body": [
+		  "const int SIZE = 5;",
+		  "",
+		  "string[] names = new string[SIZE];",
+		  "int[] scores = new int[SIZE];",
+		  "",
+		  "Console.WriteLine(\"Enter name and score of {0} players\", SIZE);",
+		  "",
+		  "for (int i = 0; i < SIZE; i++)",
+		  "{",
+		  "\tConsole.Write(\"Player {0} name: \", i + 1);",
+		  "\tnames[i] = Console.ReadLine();",
+		  "\tConsole.Write(\"Player {0} score: \", i + 1);",
+		  "\tscores[i] = Int32.Parse(Console.ReadLine());",
+		  "}",
+		  "",
+		  "int maxIndex= 0;",
+		  "",
+		  "for (int i = 0; i < SIZE; i++)",
+		  "{",
+		  "\tif (scores[i] > scores[maxIndex])",
+		  "\t{",
+		  "\t\tmaxIndex = i;",
+		  "\t}",
+		  "}",
+		  "",
+		  "Console.WriteLine(\"{0} is the winner with score {1}\", names[maxIndex], scores[maxIndex]);"
+		],
+		"description": "Array Constants"
+	},
+
+
+	//================= Operator ===============
+
+	"Arithmetic Operators": {
+		"prefix": "cs.operator.basic",
+		"body": [
+			"int a = 10;",
+			"int b = 3;",
+			"",
+			"float c = 2.0f;",
+			"",
+			"Console.WriteLine(\"a + b = \" + (a + b));",
+			"Console.WriteLine(\"a - b = \" + (a - b));",
+			"Console.WriteLine(\"a * c = \" + (a * c));",
+			"Console.WriteLine(\"a / c = \" + (a / c));",
+			"Console.WriteLine(\"a % c = \" + (a % c));"
+		],
+		"description": "Arithmetic Operators"
+	},
+
+	"Increment Decrement ": {
+		"prefix": "cs.operator.increment",
+		"body": [
+		  "int a = 5;",
+		  "int b = 5;",
+		  "",
+		  "Console.WriteLine(\"a =  {0}\", ++a);",
+		  "Console.WriteLine(\"b =  {0}\", b++);"
+		],
+		"description": "Increment Decrement "
+	},
+
+	"Relational and comparison operators": {
+		"prefix": "cs.operator.comparison",
+		"body": [
+		  "int n = 10;",
+		  "if (n % 2 == 0)",
+		  "{",
+		  "    Console.WriteLine(\"n is even number.\");",
+		  "}",
+		  "",
+		  "int x = 6, y = 2;",
+		  "if (x < y)",
+		  "{",
+		  "    Console.WriteLine(\"x is less than y\");",
+		  "}"
+		],
+		"description": "Relational and comparison operators"
+	},
+
+	"Logical operators": {
+		"prefix": "cs.operator.logical",
+		"body": [
+		  "bool a = (3 == 4);",
+		  "bool b = (3 != 4);",
+		  "bool c = (3 < 4);",
+		  "bool d = a && c;",
+		  "bool e = !d;",
+		  "",
+		  "Console.WriteLine(\"a = \" + a);",
+		  "Console.WriteLine(\"b = \" + b);",
+		  "Console.WriteLine(\"c = \" + c);",
+		  "Console.WriteLine(\"d = \" + d);",
+		  "Console.WriteLine(\"e = \" + e);"
+		],
+		"description": "Logical operators"
+	},
+
+
+	//================= Condition ===============
+
+	"Condition If": {
+		"prefix": "cs.condition.if",
+		"body": [
+		  "string name = \"John Wick\";",
+		  "if (name == \"John Wick\") {",
+		  "    Console.WriteLine(\"Welcome, John Wick!\");",
+		  "}"
+		],
+		"description": "Condition If"
+	},
+
+	"Condition If Else If": {
+		"prefix": "cs.condition.ifelseif",
+		"body": [
+		  "int score;",
+		  "",
+		  "Console.Write(\"Enter your score: \");",
+		  "int.TryParse(Console.ReadLine(), out score);",
+		  "",
+		  "if(score >= 80) {",
+		  "    Console.WriteLine(\"Your grade is A\");",
+		  "}",
+		  "else if(score >= 70) {",
+		  "    Console.WriteLine(\"Your grade is B\");",
+		  "}",
+		  "else if (score >= 60)",
+		  "{",
+		  "    Console.WriteLine(\"Your grade is C\");",
+		  "}",
+		  "else if (score >= 50)",
+		  "{",
+		  "    Console.WriteLine(\"Your grade is D\");",
+		  "}",
+		  "else {",
+		  "    Console.WriteLine(\"You fall\");",
+		  "}"
+		],
+		"description": "Condition If Else If"
+	},
+
+	"Condition If Else If Convert Temp": {
+		"prefix": "cs.condition.converttemp",
+		"body": [
+		  "int mode;",
+		  "float temperature;",
+		  "",
+		  "Console.Write(\"1: convert F to C\\n2: convert C to F\\n\");",
+		  "Console.Write(\"Enter 1 or 2: \");",
+		  "int.TryParse(Console.ReadLine(), out mode);",
+		  "",
+		  "Console.Write(\"Enter temperature to be converted: \");",
+		  "float.TryParse(Console.ReadLine(), out temperature);",
+		  "",
+		  "if (mode == 1) {",
+		  "    float c = (temperature - 32) * (5.0f / 9.0f);",
+		  "    Console.WriteLine(\"Converted {0} Fahrenheit degree to {1} Celsius degree\", temperature, c);",
+		  "} ",
+		  "else if (mode == 2) {",
+		  "    float f = temperature * 1.8f + 32;",
+		  "    Console.WriteLine(\"Converted {0} Celsius degree to {1} Fahrenheit degree\", temperature, f);",
+		  "} ",
+		  "else {",
+		  "    Console.WriteLine(\"You've entered wrong mode.\");",
+		  "}"
+		],
+		"description": "Condition If Else If Convert Temp"
+	},
+
+	"Condition Switch Case": {
+		"prefix": "cs.condition.switchcase",
+		"body": [
+		  "int n = 1;",
+		  "switch(n) {",
+		  "    case 1:",
+		  "        Console.WriteLine(\"Case 1\");",
+		  "        break;",
+		  "    case 2:",
+		  "        Console.WriteLine(\"Case 2\");",
+		  "        break;",
+		  "    default:",
+		  "        Console.WriteLine(\"Default case\");",
+		  "        break;",
+		  "}"
+		],
+		"description": "Condition Switch Case"
+	},
+
+	//================= Loop ===============
+
+	"While Loop": {
+		"prefix": "cs.loop.while",
+		"body": [
+		  "int n = 1;",
+		  "while (n <= 10)",
+		  "{",
+		  "    Console.WriteLine(\"Loop \" + n);",
+		  "    n++;",
+		  "}",
+		  "Console.WriteLine(\"Loop ended\");"
+		],
+		"description": "While Loop"
+	},
+
+	"Do While Loop": {
+		"prefix": "cs.loop.dowhile",
+		"body": [
+		  "int n;",
+		  "",
+		  "Console.WriteLine(\"Enter 0 to exit the loop\");",
+		  "do",
+		  "{",
+		  "    Console.Write(\"Your number: \");",
+		  "    int.TryParse(Console.ReadLine(), out n);",
+		  "    Console.WriteLine(\"Number you entered is \" + n);",
+		  "} while (n != 0);",
+		  "Console.WriteLine(\"Loop ended\");"
+		],
+		"description": "Do While Loop"
+	},
+
+	"For Loop": {
+		"prefix": "cs.loop.for",
+		"body": [
+		  "for (int i = 1; i <= 10; i++)",
+		  "{",
+		  "    Console.WriteLine(i);",
+		  "}"
+		],
+		"description": "For Loop"
+	},
+
+	"For Each Loop": {
+		"prefix": "cs.loop.foreach",
+		"body": [
+		  "int[] numbers = { 2, 4, -1, 5, 0, 8, 9 };",
+		  "foreach (int i in numbers)",
+		  "{",
+		  "    Console.WriteLine(i);",
+		  "} "
+		],
+		"description": "For Each Loop"
+	},
+
+	"Break": {
+		"prefix": "cs.loop.break",
+		"body": [
+		  "for (int i = 1; i <= 10; i++)",
+		  "{",
+		  "    Console.WriteLine(i);",
+		  "    if (i == 5) break;",
+		  "}  "
+		],
+		"description": "Break"
+	},
+
+	"Continue": {
+		"prefix": "cs.loop.continue",
+		"body": [
+		  "for (int i = 1; i <= 10; i++)",
+		  "{",
+		  "    if (i % 2 == 0) continue;",
+		  "    Console.WriteLine(i);",
+		  "} "
+		],
+		"description": "Continue"
+	},
+
+	//================= Arrays ===============
+
+	"Array": {
+		"prefix": "cs.array.basic",
+		"body": [
+		  "int[] array1 = new int[5];",
+		  "int[] array2 = new int[] { 1, 3, 5, 7, 9 };",
+		  "Console.WriteLine(string.Join(\" \", array1));",
+		  "Console.WriteLine(string.Join(\" \", array2));",
+		  "Console.WriteLine(array1[0]);",
+		  "Console.WriteLine(array2[2]);",
+		  "Console.WriteLine(array2[6]); // Unhandled exception. System.IndexOutOfRangeException"
+		],
+		"description": "Array"
+	},
+
+	"Array Updating": {
+		"prefix": "cs.array.update",
+		"body": [
+		  "// updating array values",
+		  "int[] array1 = new int[5];",
+		  "array1[0] = 2;",
+		  "array1[1] = 43;",
+		  "array1[2] = 54;",
+		  "",
+		  "// reading array value",
+		  "float[] array2 = new float[] {1.2f, 3.4f, 5.0f, 8.8f, 10.5f};",
+		  "Console.WriteLine(array2[0]); // 1.2",
+		  "Console.WriteLine(array2[4]); // 10.5"
+		],
+		"description": "Array Updating"
+	},
+
+	"Array Loop": {
+		"prefix": "cs.array.loop",
+		"body": [
+		  "int[] array1 = new int[10];",
+		  "for (int i = 0; i < 10; i++){",
+		  "    array1[i] = (i + 1) * 5;",
+		  "}",
+		  "",
+		  "for (int i = 0; i < 10; i++){",
+		  "    Console.Write(array1[i] + \", \");",
+		  "}"
+		],
+		"description": "Array Loop"
+	},
+
+	//================= Methods ===============
+
+	"Method Display Bio": {
+		"prefix": "cs.method.displaybio",
+		"body": [
+		  "static void displayBio(String n, int s, String sp) {",
+		  "    if (s == 0) {",
+		  "        Console.WriteLine(n + \" has \" + sp + \" as his favorite sport.\");",
+		  "    } else {",
+		  "        Console.WriteLine(n + \" has \" + sp + \" as her favorite sport.\");",
+		  "    }",
+		  "}"
+		],
+		"description": "Method Display Bio"
+	},
+
+	"Call Method Display Bio": {
+		"prefix": "cs.method.calldisplaybio",
+		"body": [
+		  "String name = \"John\";",
+		  "int sex = 0;",
+		  "String sport= \"hockey\";",
+		  "",
+		  "displayBio(name, sex, sport);",
+		  "displayBio(\"Janifer\", 1, \"swimming\");",
+		  "displayBio(\"Carl\", 0, \"football\");"
+		],
+		"description": "Call Method Display Bio"
+	},
+
+	"Method with Return type": {
+		"prefix": "cs.method.returntype",
+		"body": [
+		  "static String getText(int n) {",
+		  "    return \"Sum bewteen 1-\" + n + \" is \";",
+		  "}",
+		  "",
+		  "static int getSum(int n) {",
+		  "    int sum = 0;",
+		  "    for (int i = 1; i <= n; i++) {",
+		  "        sum += i;",
+		  "    }",
+		  "    return sum;",
+		  "}",
+		  "",
+		  "static String getEndText() {",
+		  "    return \"Program ended.\";",
+		  "};"
+		],
+		"description": "Method with Return type"
+	},
+
+
+	//================= Class ===============
+
+	"Class Car": {
+		"prefix": "cs.class.car",
+		"body": [
+		  "public class Car",
+		  "{",
+		  "    public static int enegyUserPerRun = 3;",
+		  "    String color;",
+		  "",
+		  "    private float enegy = 10;",
+		  "    public int speed = 0;",
+		  "    private int distant = 0;",
+		  "",
+		  "    public void AddEnegy()",
+		  "    {",
+		  "        enegy += 10;",
+		  "    }",
+		  "",
+		  "    public void Run()",
+		  "    {",
+		  "        if (enegy < speed * enegyUserPerRun)",
+		  "        {",
+		  "            Console.WriteLine(\"No enough enegy to run.\");",
+		  "        }",
+		  "        else",
+		  "        {",
+		  "            distant += (speed * enegyUserPerRun);",
+		  "            enegy -= enegyUserPerRun;",
+		  "        }",
+		  "    }",
+		  "",
+		  "    public void ShowDistance()",
+		  "    {",
+		  "        Console.WriteLine(\"Distance runned \" + distant);",
+		  "    }",
+		  "}"
+		],
+		"description": "Class Car"
+	},
+
+	"Class Constructor": {
+		"prefix": "cs.class.constructor",
+		"body": [
+		  "public Car(String c, float e, int s, int d)",
+		  "{",
+		  "    color = c;",
+		  "    enegy = e;",
+		  "    speed = s;",
+		  "    distant = d;",
+		  "}"
+		],
+		"description": "Class Constructor"
+	},
+
+	//================= Object ===============
+
+	"Object Class Square": {
+		"prefix": "cs.object.classSquare",
+		"body": [
+		  "class Square",
+		  "{",
+		  "    public string name;",
+		  "    private int width;",
+		  "    private int height;",
+		  "",
+		  "    public void SetDimension(int w, int h)",
+		  "    {",
+		  "        width = w;",
+		  "        height = h;",
+		  "    }",
+		  "    public int CalculateArea()",
+		  "    {",
+		  "        return width * height;",
+		  "    }",
+		  "}"
+		],
+		"description": "Object Class Square"
+	},
+
+	"Object Exercise 11 Object": {
+		"prefix": "cs.object.ex11_object",
+		"body": [
+		  "public class ex11_object",
+		  "{",
+		  "    public static void ex11()",
+		  "    {",
+		  "        Square a = new Square();",
+		  "        a.name = \"Paper\";",
+		  "        a.SetDimension(8, 11);",
+		  "",
+		  "        Square b = new Square();",
+		  "        b.name = \"Computer Screen\";",
+		  "        b.SetDimension(16, 9);",
+		  "",
+		  "        Console.WriteLine(\"Object \" + a.name + \" has area = \" + a.CalculateArea() + \" in^2\");",
+		  "        Console.WriteLine(\"Object \" + b.name + \" has area = \" + b.CalculateArea() + \" in^2\");",
+		  "    }",
+		  "}"
+		],
+		"description": "Object Exercise 11 Object"
+	},
+
+
+	//================= Inheritance ===============
+
+	"Inheritance classRectangle": {
+		"prefix": "cs.inheritance.classRectangle",
+		"body": [
+		  "class Rectangle",
+		  "{",
+		  "    public int x;",
+		  "    public int y;",
+		  "",
+		  "    public Rectangle(int x, int y)",
+		  "    {",
+		  "        this.x = x;",
+		  "        this.y = y;",
+		  "    }",
+		  "",
+		  "    public double GetArea()",
+		  "    {",
+		  "        return x * y;",
+		  "    }",
+		  "}"
+		],
+		"description": "Inheritance classRectangle"
+	},
+
+	"Inheritance classCuboid ": {
+		"prefix": "cs.inheritance.classCuboid",
+		"body": [
+		  "class Cuboid : Rectangle",
+		  "{",
+		  "    public int z;",
+		  "",
+		  "    public Cuboid(int x, int y, int z) : base(x, y)",
+		  "    {",
+		  "        this.z = z;",
+		  "    }",
+		  "",
+		  "    public double GetVolume()",
+		  "    {",
+		  "        return GetArea() * z;",
+		  "    }",
+		  "}"
+		],
+		"description": "Inheritance classCuboid "
+	},
+
+	"Inheritance Exercise12 Class": {
+		"prefix": "cs.inheritance.ex12_inheritance",
+		"body": [
+		  "public class ex12_inheritance",
+		  "{",
+		  "    public static void ex12()",
+		  "    {",
+		  "",
+		  "        Rectangle rec1 = new Rectangle(3, 4);",
+		  "        Console.WriteLine(\"Rectangle 1\");",
+		  "        Console.WriteLine(\"size [{0}, {1}]\", rec1.x, rec1.y);",
+		  "        Console.WriteLine(\"Area = {0}\", rec1.GetArea());",
+		  "        Console.WriteLine();",
+		  "",
+		  "        Cuboid cub1 = new Cuboid(5, 3, 4);",
+		  "        Console.WriteLine(\"Cuboid 1\");",
+		  "        Console.WriteLine(\"size [{0}, {1}, {2}]\",",
+		  "        cub1.x, cub1.y, cub1.z);",
+		  "        Console.WriteLine(\"Volume = {0}\", cub1.GetVolume());",
+		  "        Console.WriteLine();",
+		  "",
+		  "        Cuboid cub2 = new Cuboid(10, 10, 10);",
+		  "        Console.WriteLine(\"Cuboid 2\");",
+		  "        Console.WriteLine(\"size [{0}, {1}, {2}]\",",
+		  "        cub2.x, cub2.y, cub2.z);",
+		  "        Console.WriteLine(\"Volume = {0}\", cub2.GetVolume());",
+		  "",
+		  "    }",
+		  "}"
+		],
+		"description": "Inheritance Exercise12 Class"
+	}    
+}
